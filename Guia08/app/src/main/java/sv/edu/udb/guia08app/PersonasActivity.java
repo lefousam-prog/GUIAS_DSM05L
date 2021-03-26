@@ -56,6 +56,11 @@ public class PersonasActivity extends AppCompatActivity {
                 intent.putExtra("key", personas.get(i).getKey());
                 intent.putExtra("nombre",personas.get(i).getNombre());
                 intent.putExtra("dui",personas.get(i).getDui());
+                intent.putExtra("dui",personas.get(i).getDui());
+                intent.putExtra("genero", personas.get(i).getGenero());
+                intent.putExtra("fecha_nacimiento", personas.get(i).getFecha_nacimiento());
+                intent.putExtra("peso", personas.get(i).getPeso());
+                intent.putExtra("altura", personas.get(i).getAltura());
                 startActivity(intent);
             }
         });
@@ -102,6 +107,10 @@ public class PersonasActivity extends AppCompatActivity {
                 i.putExtra("key","");
                 i.putExtra("nombre","");
                 i.putExtra("dui","");
+                i.putExtra("genero", "");
+                i.putExtra("fecha_nacimiento", "");
+                i.putExtra("peso", "");
+                i.putExtra("altura", "");
                 startActivity(i);
             }
         });
